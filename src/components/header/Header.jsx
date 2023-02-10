@@ -1,10 +1,12 @@
 import {
   faBed,
+  faCalendar,
   faCalendarDays,
   faCar,
   faPerson,
   faPlane,
   faTaxi,
+  faVenusMars
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./header.css";
@@ -74,6 +76,19 @@ const Header = ({ type }) => {
           <div className="headerListItem">
             <FontAwesomeIcon icon={faTaxi} />
             <span>Airport taxis</span>
+          </div>
+          <div className="headerListItem">
+            <FontAwesomeIcon icon={faVenusMars} />
+            <span>faVenusMars</span>
+          </div>
+          <div className="headerListItem">
+            <FontAwesomeIcon icon={faCalendar} />
+            <span>faCalendar</span>
+          </div>
+          <div className="headerListItem">
+            <FontAwesomeIcon icon={faPerson} />
+            <span>faperson
+             </span>
           </div>
         </div>
         {type !== "list" && (
